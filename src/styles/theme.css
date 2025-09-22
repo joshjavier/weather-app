@@ -23,40 +23,41 @@
   --font-bricolage-grotesque: 'Bricolage Grotesque', sans-serif;
 
   --text-preset-1: 96px;
-  --text-preset-1-font-weight: 600;
-  --text-preset-1-line-height: 1;
-  --text-preset-1-letter-spacing: -2px;
+  --text-preset-1--font-weight: 600;
+  --text-preset-1--line-height: 1;
+  --text-preset-1--letter-spacing: -2px;
 
   --text-preset-2: 52px;
-  --text-preset-2-font-weight: 700;
-  --text-preset-2-line-height: 1.2;
+  --text-preset-2--font-weight: 700;
+  --text-preset-2--line-height: 1.2;
 
   --text-preset-3: 32px;
-  --text-preset-3-font-weight: 300;
-  --text-preset-3-line-height: 1;
+  --text-preset-3--font-weight: 300;
+  --text-preset-3--line-height: 1;
 
   --text-preset-4: 28px;
-  --text-preset-4-font-weight: 700;
-  --text-preset-4-line-height: 1.2;
+  --text-preset-4--font-weight: 700;
+  --text-preset-4--line-height: 1.2;
 
   --text-preset-5: 20px;
-  --text-preset-5-font-weight: 600;
-  --text-preset-5-line-height: 1.2;
+  --text-preset-5--font-weight: 600;
+  --text-preset-5--line-height: 1.2;
 
   --text-preset-6: 18px;
-  --text-preset-6-font-weight: 500;
-  --text-preset-6-line-height: 1.2;
+  --text-preset-6--font-weight: 500;
+  --text-preset-6--line-height: 1.2;
 
   --text-preset-7: 16px;
-  --text-preset-7-font-weight: 500;
-  --text-preset-7-line-height: 1.2;
+  --text-preset-7--font-weight: 500;
+  --text-preset-7--line-height: 1.2;
 
   --text-preset-8: 14px;
-  --text-preset-8-font-weight: 500;
-  --text-preset-8-line-height: 1.2;
+  --text-preset-8--font-weight: 500;
+  --text-preset-8--line-height: 1.2;
 
   /* SPACING */
 
+  --spacing-*: initial;
   --spacing-0: 0;
   --spacing-025: 2px;
   --spacing-050: 4px;
@@ -79,6 +80,7 @@
 
   /* RADIUS */
 
+  --radius-*: initial;
   --radius-0: 0;
   --radius-4: 4px;
   --radius-6: 6px;
