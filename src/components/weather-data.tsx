@@ -1,11 +1,12 @@
+import { DailyForecast } from './daily-forecast'
 import { WeatherInfo } from './weather-info'
 
 export function WeatherData() {
   return (
     <div className="flex w-full gap-400">
-      <div>
+      <div className="space-y-600">
         <WeatherInfo />
-        <div>Daily Forecast</div>
+        <DailyForecast />
       </div>
       <div>Hourly Forecast</div>
     </div>

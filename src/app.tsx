@@ -4,7 +4,7 @@ import { WeatherData } from './components/weather-data'
 
 function App() {
   return (
-    <div className="min-h-svh space-y-600 lg:space-y-800">
+    <div className="min-h-svh space-y-600 pb-1000 lg:space-y-800">
       <div className="mx-auto box-content max-w-[1216px] px-200 sm:px-300">
         <Header />
       </div>
