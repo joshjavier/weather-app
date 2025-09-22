@@ -1,5 +1,6 @@
 import { Header } from './components/header'
 import { Search } from './components/search'
+import { WeatherData } from './components/weather-data'
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <div className="mx-auto box-content max-w-[1216px] px-200 sm:px-300">
         <main className="flex flex-col items-center gap-400 lg:gap-600">
           <Search />
-          <div>Content</div>
+          <WeatherData />
         </main>
       </div>
     </div>
