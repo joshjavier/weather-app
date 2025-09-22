@@ -1,0 +1,92 @@
+@theme {
+  /* COLOR */
+
+  --color-neutral-*: initial;
+  --color-neutral-900: #02012c;
+  --color-neutral-800: #262540;
+  --color-neutral-700: #302f4a;
+  --color-neutral-600: #3c3b5e;
+  --color-neutral-300: #acacb7;
+  --color-neutral-200: #d4d3d9;
+  --color-neutral-0: #fff;
+
+  --color-orange-*: initial;
+  --color-orange-500: #ff820a;
+
+  --color-blue-*: initial;
+  --color-blue-500: #4658d9;
+  --color-blue-700: #2b1b9c;
+
+  /* TYPOGRAPHY */
+
+  --font-dm-sans: 'DM Sans', sans-serif;
+  --font-bricolage-grotesque: 'Bricolage Grotesque', sans-serif;
+
+  --text-preset-1: 96px;
+  --text-preset-1-font-weight: 600;
+  --text-preset-1-line-height: 1;
+  --text-preset-1-letter-spacing: -2px;
+
+  --text-preset-2: 52px;
+  --text-preset-2-font-weight: 700;
+  --text-preset-2-line-height: 1.2;
+
+  --text-preset-3: 32px;
+  --text-preset-3-font-weight: 300;
+  --text-preset-3-line-height: 1;
+
+  --text-preset-4: 28px;
+  --text-preset-4-font-weight: 700;
+  --text-preset-4-line-height: 1.2;
+
+  --text-preset-5: 20px;
+  --text-preset-5-font-weight: 600;
+  --text-preset-5-line-height: 1.2;
+
+  --text-preset-6: 18px;
+  --text-preset-6-font-weight: 500;
+  --text-preset-6-line-height: 1.2;
+
+  --text-preset-7: 16px;
+  --text-preset-7-font-weight: 500;
+  --text-preset-7-line-height: 1.2;
+
+  --text-preset-8: 14px;
+  --text-preset-8-font-weight: 500;
+  --text-preset-8-line-height: 1.2;
+
+  /* SPACING */
+
+  --spacing-0: 0;
+  --spacing-025: 2px;
+  --spacing-050: 4px;
+  --spacing-075: 6px;
+  --spacing-100: 8px;
+  --spacing-125: 10px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-250: 20px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1000: 80px;
+  --spacing-1200: 96px;
+  --spacing-1400: 112px;
+  --spacing-1600: 128px;
+  --spacing-1800: 140px;
+
+  /* RADIUS */
+
+  --radius-0: 0;
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-full: 999px;
+}

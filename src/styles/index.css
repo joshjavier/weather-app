@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+@import './theme.css';
+@import './fonts.css';
+
+.root {
+  isolation: isolate;
+}
+
+body {
+  background-color: var(--color-neutral-900);
+  color: var(--color-neutral-0);
+  font-family: var(--font-dm-sans);
+}
