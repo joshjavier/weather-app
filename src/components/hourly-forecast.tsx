@@ -1,3 +1,6 @@
+import * as React from 'react'
+import { twMerge } from '@/lib/utils'
+
 function HourlyWeatherCard({
   icon,
   time,
@@ -16,9 +19,18 @@ function HourlyWeatherCard({
   )
 }
 
-export function HourlyForecast() {
+export function HourlyForecast({
+  className,
+  ...props
+}: React.ComponentProps<'div'>) {
   return (
-    <div className="rounded-20 flex max-w-[384px] flex-1 flex-col gap-200 bg-neutral-800 p-300">
+    <div
+      className={twMerge(
+        'rounded-20 flex flex-col gap-200 bg-neutral-800 px-200 py-250 sm:p-300',
+        className,
+      )}
+      {...props}
+    >
       <div className="flex items-center justify-between">
         <h2 className="text-preset-5">Hourly Forecast</h2>
       </div>

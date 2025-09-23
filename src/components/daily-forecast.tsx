@@ -25,7 +25,7 @@ export function DailyForecast() {
   return (
     <div className="space-y-250">
       <h2 className="text-preset-5">Daily Forecast</h2>
-      <div className="grid grid-cols-7 gap-200">
+      <div className="grid grid-cols-[repeat(auto-fit,_minmax(89px,_1fr))] gap-200 lg:grid-cols-7">
         <WeatherCard
           label="Tue"
           icon={{ src: '/images/icon-rain.webp', alt: 'Rain' }}
