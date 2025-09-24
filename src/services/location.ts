@@ -16,7 +16,10 @@ type Location = Record<string, string | number> & {
   postcodes: string[]
 }
 
-type LocationData = Location[]
+type LocationData = {
+  results?: Location[]
+  generationtime_ms: number
+}
 
 type LocationError = {
   error: true
@@ -34,7 +37,7 @@ function isLocationError(value: unknown): value is LocationError {
 
 export async function fetchLocations(
   searchTerm: string,
-): Promise<LocationData> {
+): Promise<LocationData['results']> {
   const apiUrl = 'https://geocoding-api.open-meteo.com/v1/search'
   const params = new URLSearchParams()
   params.append('name', searchTerm)
@@ -50,5 +53,5 @@ export async function fetchLocations(
     throw new Error(message)
   }
 
-  return result
+  return result.results ?? []
 }
