@@ -27,6 +27,7 @@ export function UnitsDropdown() {
   const [windSpeed, setWindSpeed] = useState<WindSpeed>('km/h')
   const [precipitation, setPrecipitation] = useState<Precipitation>('mm')
 
+  // Set each unit to the selected system of measurement
   useEffect(() => {
     switch (system) {
       case 'metric':
@@ -43,6 +44,19 @@ export function UnitsDropdown() {
         throw new Error('invalid system')
     }
   }, [system])
+
+  // Conversely, set system to metric if all units are metric and vice versa
+  useEffect(() => {
+    if (temperature === 'c' && windSpeed === 'km/h' && precipitation === 'mm') {
+      setSystem('metric')
+      return
+    }
+
+    if (temperature === 'f' && windSpeed === 'mph' && precipitation === 'in') {
+      setSystem('imperial')
+      return
+    }
+  }, [temperature, windSpeed, precipitation])
 
   const toggleSystem = () => {
     setSystem((s) => (s === 'metric' ? 'imperial' : 'metric'))
