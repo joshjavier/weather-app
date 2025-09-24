@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { twMerge } from '@/lib/utils'
+import { DaysDropdown } from './days-dropdown'
 
 function HourlyWeatherCard({
   icon,
@@ -31,8 +32,9 @@ export function HourlyForecast({
       )}
       {...props}
     >
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-150">
         <h2 className="text-preset-5">Hourly Forecast</h2>
+        <DaysDropdown />
       </div>
       <HourlyWeatherCard
         icon={{ src: '/images/icon-overcast.webp', alt: 'Overcast' }}
