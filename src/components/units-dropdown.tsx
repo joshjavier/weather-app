@@ -60,11 +60,11 @@ export function UnitsDropdown() {
       </Menu.Trigger>
       <Menu.Portal>
         <Menu.Positioner align="end" sideOffset={10}>
-          <Menu.Popup className="py-075 rounded-12 gap-050 grid min-w-[214px] origin-[var(--transform-origin)] border border-neutral-600 bg-neutral-800 px-100 shadow-[0_8px_16px_hsl(241,96,9,0.32)] transition-[transform,scale,opacity] data-[ending-style]:scale-90 data-[ending-style]:opacity-0 data-[starting-style]:scale-90 data-[starting-style]:opacity-0">
+          <Menu.Popup className="py-075 rounded-12 gap-050 grid min-w-[214px] origin-(--transform-origin) border border-neutral-600 bg-neutral-800 px-100 shadow-[0_8px_16px_hsl(241,96,9,0.32)] transition-[transform,scale,opacity] data-[ending-style]:scale-90 data-[ending-style]:opacity-0 data-[starting-style]:scale-90 data-[starting-style]:opacity-0">
             <Menu.Item
               onClick={toggleSystem}
               closeOnClick={false}
-              className="rounded-8 flex cursor-pointer items-center justify-between gap-125 bg-neutral-700 px-100 py-125 outline-offset-1 focus-visible:outline"
+              className="rounded-8 flex cursor-pointer items-center justify-between gap-125 bg-neutral-700 px-100 py-125 outline-offset-1 select-none focus-visible:outline"
             >
               Switch to {system === 'metric' ? 'Imperial' : 'Metric'}
             </Menu.Item>
@@ -80,14 +80,14 @@ export function UnitsDropdown() {
               >
                 <Menu.RadioItem
                   value="c"
-                  className="rounded-8 flex cursor-pointer items-center justify-between gap-125 bg-neutral-700 px-100 py-125 outline-offset-1 focus-visible:outline"
+                  className="rounded-8 flex cursor-pointer items-center justify-between gap-125 bg-neutral-700 px-100 py-125 outline-offset-1 select-none focus-visible:outline"
                 >
                   <span>Celsius (&deg;C)</span>
                   <CheckIcon />
                 </Menu.RadioItem>
                 <Menu.RadioItem
                   value="f"
-                  className="rounded-8 flex cursor-pointer items-center justify-between gap-125 bg-neutral-700 px-100 py-125 outline-offset-1 focus-visible:outline"
+                  className="rounded-8 flex cursor-pointer items-center justify-between gap-125 bg-neutral-700 px-100 py-125 outline-offset-1 select-none focus-visible:outline"
                 >
                   <span>Fahrenheit (&deg;F)</span>
                   <CheckIcon />
@@ -108,14 +108,14 @@ export function UnitsDropdown() {
               >
                 <Menu.RadioItem
                   value="km/h"
-                  className="rounded-8 flex cursor-pointer items-center justify-between gap-125 bg-neutral-700 px-100 py-125 outline-offset-1 focus-visible:outline"
+                  className="rounded-8 flex cursor-pointer items-center justify-between gap-125 bg-neutral-700 px-100 py-125 outline-offset-1 select-none focus-visible:outline"
                 >
                   <span>km/h</span>
                   <CheckIcon />
                 </Menu.RadioItem>
                 <Menu.RadioItem
                   value="mph"
-                  className="rounded-8 flex cursor-pointer items-center justify-between gap-125 bg-neutral-700 px-100 py-125 outline-offset-1 focus-visible:outline"
+                  className="rounded-8 flex cursor-pointer items-center justify-between gap-125 bg-neutral-700 px-100 py-125 outline-offset-1 select-none focus-visible:outline"
                 >
                   <span>mph</span>
                   <CheckIcon />
@@ -136,14 +136,14 @@ export function UnitsDropdown() {
               >
                 <Menu.RadioItem
                   value="mm"
-                  className="rounded-8 flex cursor-pointer items-center justify-between gap-125 bg-neutral-700 px-100 py-125 outline-offset-1 focus-visible:outline"
+                  className="rounded-8 flex cursor-pointer items-center justify-between gap-125 bg-neutral-700 px-100 py-125 outline-offset-1 select-none focus-visible:outline"
                 >
                   <span>Millimeters (mm)</span>
                   <CheckIcon />
                 </Menu.RadioItem>
                 <Menu.RadioItem
                   value="in"
-                  className="rounded-8 flex cursor-pointer items-center justify-between gap-125 bg-neutral-700 px-100 py-125 outline-offset-1 focus-visible:outline"
+                  className="rounded-8 flex cursor-pointer items-center justify-between gap-125 bg-neutral-700 px-100 py-125 outline-offset-1 select-none focus-visible:outline"
                 >
                   <span>Inches (in)</span>
                   <CheckIcon />
