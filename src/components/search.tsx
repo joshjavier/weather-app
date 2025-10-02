@@ -1,8 +1,8 @@
 import type { FormEvent } from 'react'
 import { Input } from '@base-ui-components/react'
 import IconSearch from '@/assets/icon-search.svg?react'
+import { fetchLocations } from '@/lib/location'
 import { queryClient } from '@/lib/query-client'
-import { fetchLocations } from '@/services/location'
 
 export function Search() {
   const onSearch = (e: FormEvent<HTMLFormElement>) => {

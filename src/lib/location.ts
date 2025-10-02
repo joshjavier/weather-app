@@ -45,12 +45,12 @@ export async function fetchLocations(
   const response = await fetch(`${apiUrl}?${params}`)
   const result = await response.json()
 
+  // Manually throw on errors not handled by fetch
   if (!response.ok) {
-    let message = 'Failed to fetch locations'
     if (isLocationError(result)) {
-      message += `: ${result.reason}`
+      throw new Error(result.reason)
     }
-    throw new Error(message)
+    throw new Error(`Response status: ${response.status}`)
   }
 
   return result.results ?? []
