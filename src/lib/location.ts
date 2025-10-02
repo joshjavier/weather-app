@@ -1,7 +1,7 @@
 // Open-Meteo's Geocoding API accepts a search term and returns a list
 // of matching locations. See https://open-meteo.com/en/docs/geocoding-api
 
-type Location = Record<string, string | number> & {
+export type Location = Record<string, string | number> & {
   id: number
   name: string
   latitude: number
