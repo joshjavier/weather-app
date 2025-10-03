@@ -15,4 +15,5 @@ export default {
     '[.]css$',
   ],
   tailwindStylesheet: './src/index.css',
+  tailwindFunctions: ['cn'],
 }
