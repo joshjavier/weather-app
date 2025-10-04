@@ -1,12 +1,9 @@
-import { Button } from './components/ui/button'
+import { Header } from './components/header'
 
 function App() {
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center">
-      <Button>Click me</Button>
-      <Button variant="trigger" size="sm">
-        Click me
-      </Button>
+    <div className="gap-800 pb-1000 flex min-h-svh flex-col">
+      <Header className="pt-200 sm:pt-300 lg:pt-600" />
     </div>
   )
 }

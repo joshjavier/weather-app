@@ -130,6 +130,7 @@
 }
 
 :root {
+  --wrapper: 1216px;
   --background: var(--color-neutral-900);
   --foreground: var(--color-neutral-0);
   --card: var(--color-neutral-800);
