@@ -1,6 +1,7 @@
 import { Header } from './components/header'
 import { Search } from './components/search'
 import { Title } from './components/title'
+import { WeatherInfo } from './components/weather-info'
 
 function App() {
   return (
@@ -9,10 +10,21 @@ function App() {
       <main className="contents">
         <Title />
         <div>
-          <div className="max-w-(--wrapper) px-200 md:px-300 mx-auto box-content">
+          <div className="max-w-(--wrapper) px-200 sm:px-300 mx-auto box-content">
             <div className="gap-400 lg:gap-600 flex flex-col">
               <Search />
-              <div>Content</div>
+              <div className="gap-400 [&_>:first-child]:basis-800/1216 [&_>:last-child]:basis-384/1216 flex max-lg:flex-col">
+                <div>
+                  <WeatherInfo
+                    location="Berlin, Germany"
+                    date="2025-08-05"
+                    icon="sunny"
+                    temp={20}
+                  />
+                  <div>Daily Forecast</div>
+                </div>
+                <div>Hourly Forecast</div>
+              </div>
             </div>
           </div>
         </div>
