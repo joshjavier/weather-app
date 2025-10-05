@@ -1,24 +1,20 @@
 import { formatDate } from '@/lib/utils'
+import { getWeatherDescription, getWeatherImageUrl } from '@/lib/weather-codes'
 import { WeatherDetails } from './weather-details'
-
-type Icon =
-  | 'drizzle'
-  | 'fog'
-  | 'overcast'
-  | 'partly-cloudy'
-  | 'rain'
-  | 'snow'
-  | 'storm'
-  | 'sunny'
 
 interface WeatherInfoProps {
   location: string
   date: string
-  icon: Icon
+  weatherCode: number
   temp: number
 }
 
-export function WeatherInfo({ location, date, icon, temp }: WeatherInfoProps) {
+export function WeatherInfo({
+  location,
+  date,
+  weatherCode,
+  temp,
+}: WeatherInfoProps) {
   return (
     <div className="gap-250 lg:gap-400 flex flex-col">
       <h2 className="sr-only">Current weather</h2>
@@ -30,8 +26,8 @@ export function WeatherInfo({ location, date, icon, temp }: WeatherInfoProps) {
         </div>
         <div className="gap-250 flex items-center">
           <img
-            src={`/images/icon-${icon}.webp`}
-            alt={icon}
+            src={getWeatherImageUrl(weatherCode)}
+            alt={getWeatherDescription(weatherCode)}
             width={120}
             height={120}
           />

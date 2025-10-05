@@ -19,7 +19,7 @@ function App() {
                   <WeatherInfo
                     location="Berlin, Germany"
                     date="2025-08-05"
-                    icon="sunny"
+                    weatherCode={0}
                     temp={20}
                   />
                   <DailyForecast />
