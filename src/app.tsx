@@ -1,3 +1,4 @@
+import { DailyForecast } from './components/daily-forecast'
 import { Header } from './components/header'
 import { Search } from './components/search'
 import { Title } from './components/title'
@@ -14,14 +15,14 @@ function App() {
             <div className="gap-400 lg:gap-600 flex flex-col">
               <Search />
               <div className="gap-400 [&_>:first-child]:basis-800/1216 [&_>:last-child]:basis-384/1216 flex max-lg:flex-col">
-                <div>
+                <div className="gap-400 lg:gap-600 flex flex-col">
                   <WeatherInfo
                     location="Berlin, Germany"
                     date="2025-08-05"
                     icon="sunny"
                     temp={20}
                   />
-                  <div>Daily Forecast</div>
+                  <DailyForecast />
                 </div>
                 <div>Hourly Forecast</div>
               </div>
