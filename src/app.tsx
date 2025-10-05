@@ -1,5 +1,6 @@
 import { DailyForecast } from './components/daily-forecast'
 import { Header } from './components/header'
+import { HourlyForecast } from './components/hourly-forecast'
 import { Search } from './components/search'
 import { Title } from './components/title'
 import { WeatherInfo } from './components/weather-info'
@@ -24,7 +25,7 @@ function App() {
                   />
                   <DailyForecast />
                 </div>
-                <div>Hourly Forecast</div>
+                <HourlyForecast />
               </div>
             </div>
           </div>
