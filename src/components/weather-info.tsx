@@ -1,4 +1,5 @@
 import { formatDate } from '@/lib/utils'
+import { WeatherDetails } from './weather-details'
 
 type Icon =
   | 'drizzle'
@@ -20,6 +21,8 @@ interface WeatherInfoProps {
 export function WeatherInfo({ location, date, icon, temp }: WeatherInfoProps) {
   return (
     <div className="gap-250 lg:gap-400 flex flex-col">
+      <h2 className="sr-only">Current weather</h2>
+
       <div className="rounded-20 -bg-linear-67 px-300 gap-200 flex min-h-[286px] items-center justify-between from-blue-500 to-blue-700 max-sm:flex-col max-sm:justify-center">
         <div className="max-sm:text-center">
           <p className="text-preset-4 mb-150">{location}</p>
@@ -38,7 +41,12 @@ export function WeatherInfo({ location, date, icon, temp }: WeatherInfoProps) {
         </div>
       </div>
 
-      <div>Weather Details</div>
+      <WeatherDetails
+        temperature="18&deg;"
+        humidity="46%"
+        wind="14 km/h"
+        precipitation="0 mm"
+      />
     </div>
   )
 }
