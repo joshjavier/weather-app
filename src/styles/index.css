@@ -93,6 +93,8 @@
   --radius-20: 20px;
   --radius-24: 24px;
   --radius-full: 999px;
+
+  --shadow-popover: 0 8px 16px --alpha(var(--color-neutral-900) / 32%);
 }
 
 @theme inline {
@@ -136,7 +138,7 @@
   --card: var(--color-neutral-800);
   --card-foreground: oklch(0.145 0 0);
   --popover: var(--color-neutral-800);
-  --popover-foreground: oklch(0.145 0 0);
+  --popover-foreground: var(--color-neutral-0);
   --primary: var(--color-blue-500);
   --primary-foreground: var(--color-neutral-0);
   --secondary: oklch(0.97 0 0);
